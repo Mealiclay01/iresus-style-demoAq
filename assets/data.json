@@ -1,0 +1,304 @@
+{
+  "appTitle": "Guidelines Demo",
+  "sections": [
+    {
+      "id": "adult",
+      "title": "Adult Guidelines",
+      "items": [
+        {
+          "id": "als",
+          "title": "Advanced Life Support",
+          "subtitle": "Unresponsive & not breathing normally",
+          "start": "als_1"
+        }
+      ]
+    },
+    {
+      "id": "paeds",
+      "title": "Paediatric Guidelines",
+      "items": [
+        {
+          "id": "choking",
+          "title": "Choking Child",
+          "subtitle": "Foreign body airway obstruction",
+          "start": "choke_1"
+        }
+      ]
+    },
+    {
+      "id": "newborn",
+      "title": "Newborn Guidelines",
+      "items": [
+        {
+          "id": "newborn_ls",
+          "title": "Newborn Life Support",
+          "subtitle": "Delivery room initial steps",
+          "start": "nb_1"
+        }
+      ]
+    }
+  ],
+  "algorithms": {
+    "als": {
+      "title": "Advanced Life Support",
+      "tabs": [
+        {
+          "id": "overview",
+          "label": "Overview"
+        },
+        {
+          "id": "drugs",
+          "label": "Drugs"
+        },
+        {
+          "id": "notes",
+          "label": "Notes"
+        }
+      ],
+      "drugsCards": [
+        {
+          "name": "Adrenaline (Epinephrine)",
+          "dose": "1 mg IV/IO",
+          "route": "Intravenous or Intraosseous",
+          "notes": "Give after 3rd shock for shockable rhythms. Repeat every 3-5 minutes during CPR."
+        },
+        {
+          "name": "Amiodarone",
+          "dose": "300 mg IV/IO",
+          "route": "Intravenous or Intraosseous",
+          "notes": "After 3 shocks if VF/pVT persists. Second dose of 150 mg can be given."
+        },
+        {
+          "name": "Atropine",
+          "dose": "500 mcg IV",
+          "route": "Intravenous",
+          "notes": "No longer recommended in cardiac arrest management."
+        }
+      ],
+      "notesMarkdown": "### Reversible Causes (4 Hs & 4 Ts)\n\n- Hypoxia\n- Hypovolemia\n- Hypo/hyperkalemia & metabolic disorders\n- Hypothermia\n- Thrombosis (coronary or pulmonary)\n- Tamponade (cardiac)\n- Toxins\n- Tension pneumothorax\n\n### Key Points\n\nMinimize interruptions in chest compressions. Ensure high-quality CPR throughout. Consider mechanical CPR devices if available. Monitor ETCO2 if capnography available.",
+      "steps": [
+        {
+          "id": "als_1",
+          "type": "header",
+          "color": "blue",
+          "text": "Unresponsive and not breathing normally",
+          "icon": "camera",
+          "image": {
+            "url": "./assets/images/cpr_ref.svg",
+            "caption": "CPR technique reference"
+          }
+        },
+        {
+          "id": "als_2",
+          "type": "step",
+          "color": "grey",
+          "text": "Call resuscitation team / ambulance",
+          "icon": "clipboard"
+        },
+        {
+          "id": "als_3",
+          "type": "step",
+          "color": "grey",
+          "text": "CPR 30:2 • Attach defibrillator/monitor",
+          "icon": "camera",
+          "image": {
+            "url": "./assets/images/airway_ref.svg",
+            "caption": "Airway management reference"
+          }
+        },
+        {
+          "id": "als_4",
+          "type": "step",
+          "color": "grey",
+          "text": "Assess rhythm",
+          "icon": "clipboard"
+        },
+        {
+          "id": "als_5",
+          "type": "branch",
+          "question": "Rhythm shockable?",
+          "options": [
+            {
+              "label": "SHOCKABLE (VF/pVT)",
+              "to": "als_s1",
+              "color": "red"
+            },
+            {
+              "label": "NON-SHOCKABLE (PEA/Asystole)",
+              "to": "als_ns1",
+              "color": "green"
+            }
+          ]
+        },
+        {
+          "id": "als_s1",
+          "type": "step",
+          "color": "red",
+          "text": "Shockable pathway • Deliver 1 shock • Resume CPR immediately",
+          "icon": "camera",
+          "image": {
+            "url": "./assets/images/shockable_ref.svg",
+            "caption": "Shockable rhythm management"
+          }
+        },
+        {
+          "id": "als_ns1",
+          "type": "step",
+          "color": "green",
+          "text": "Non-shockable pathway • Continue CPR • Give adrenaline",
+          "icon": "camera",
+          "image": {
+            "url": "./assets/images/nonshockable_ref.svg",
+            "caption": "Non-shockable rhythm management"
+          }
+        },
+        {
+          "id": "als_rosc",
+          "type": "step",
+          "color": "yellow",
+          "text": "Return of spontaneous circulation (ROSC)",
+          "icon": "clipboard"
+        }
+      ]
+    },
+    "choking": {
+      "title": "Choking Child",
+      "tabs": [
+        {
+          "id": "overview",
+          "label": "Overview"
+        },
+        {
+          "id": "notes",
+          "label": "Notes"
+        }
+      ],
+      "drugsCards": [],
+      "notesMarkdown": "### Recognition\n\nSudden onset of respiratory distress with history of eating or playing with small objects.\n\n### Effective vs Ineffective Cough\n\n- Effective: Able to speak, cry, cough forcefully\n- Ineffective: Unable to vocalize, silent cough, cyanosis, decreasing consciousness\n\n### Important Notes\n\nNever perform blind finger sweeps. Only remove visible objects that are easily accessible. Do not give abdominal thrusts to infants under 1 year.",
+      "steps": [
+        {
+          "id": "choke_1",
+          "type": "header",
+          "color": "green",
+          "text": "Suspect foreign body airway obstruction",
+          "icon": "clipboard"
+        },
+        {
+          "id": "choke_2",
+          "type": "step",
+          "color": "grey",
+          "text": "Shout for HELP",
+          "icon": "clipboard"
+        },
+        {
+          "id": "choke_3",
+          "type": "header",
+          "color": "blue",
+          "text": "Cough effective?",
+          "icon": "clipboard"
+        },
+        {
+          "id": "choke_4",
+          "type": "branch",
+          "question": "Choose",
+          "options": [
+            {
+              "label": "NO",
+              "to": "choke_no",
+              "color": "red"
+            },
+            {
+              "label": "YES",
+              "to": "choke_yes",
+              "color": "green"
+            }
+          ]
+        },
+        {
+          "id": "choke_no",
+          "type": "step",
+          "color": "red",
+          "text": "Ineffective cough • Back blows & chest thrusts (infant) or abdominal thrusts (child >1yr)",
+          "icon": "camera",
+          "image": {
+            "url": "./assets/images/choking_ref.svg",
+            "caption": "Choking management techniques"
+          }
+        },
+        {
+          "id": "choke_yes",
+          "type": "step",
+          "color": "green",
+          "text": "Encourage cough • Continue to check for deterioration",
+          "icon": "clipboard"
+        }
+      ]
+    },
+    "newborn_ls": {
+      "title": "Newborn Life Support",
+      "tabs": [
+        {
+          "id": "overview",
+          "label": "Overview"
+        },
+        {
+          "id": "notes",
+          "label": "Notes"
+        }
+      ],
+      "drugsCards": [],
+      "notesMarkdown": "### Initial Assessment (Golden Minute)\n\n- Assess immediately: tone, breathing, heart rate\n- Most newborns establish breathing spontaneously\n- Only ~10% need some assistance\n- <1% need extensive resuscitation\n\n### Temperature Management\n\nMaintain temperature 36.5-37.5°C. Use plastic wrap for very preterm infants (<28 weeks). Avoid hyperthermia.\n\n### Oxygen Titration\n\nStart with air for term/near-term newborns. Use SpO₂ monitoring. Titrate oxygen to target saturations.",
+      "steps": [
+        {
+          "id": "nb_1",
+          "type": "pill",
+          "text": "(Antenatal counselling) Team briefing and equipment check"
+        },
+        {
+          "id": "nb_2",
+          "type": "header",
+          "color": "maroon",
+          "text": "Birth • Delay cord clamping if possible",
+          "icon": "clipboard"
+        },
+        {
+          "id": "nb_3",
+          "type": "step",
+          "color": "grey",
+          "text": "Start clock / note time • Dry / wrap, stimulate, keep warm",
+          "icon": "clipboard"
+        },
+        {
+          "id": "nb_4",
+          "type": "header",
+          "color": "blue",
+          "text": "Assess • Colour, tone, breathing, heart rate",
+          "icon": "clipboard"
+        },
+        {
+          "id": "nb_5",
+          "type": "pill",
+          "text": "Ensure an open airway • Preterm: consider CPAP"
+        },
+        {
+          "id": "nb_6",
+          "type": "step",
+          "color": "peach",
+          "text": "If gasping / not breathing: Give 5 inflations (30 cm H₂O) • Apply PEEP 5–6 cm H₂O • Apply SpO₂ +/- ECG",
+          "icon": "camera",
+          "image": {
+            "url": "./assets/images/newborn_ref.svg",
+            "caption": "Newborn life support initial assessment"
+          }
+        },
+        {
+          "id": "nb_7",
+          "type": "header",
+          "color": "blue",
+          "text": "Reassess • If no increase in heart rate, look for chest movement",
+          "icon": "clipboard"
+        }
+      ]
+    }
+  }
+}

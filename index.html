@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="theme-color" content="#2563eb"/>
+  <meta name="description" content="Medical guidelines demo app - client-ready prototype"/>
+  <title>Guidelines Demo</title>
+  <link rel="stylesheet" href="./assets/app.css"/>
+  <link rel="manifest" href="./manifest.json"/>
+</head>
+<body>
+  <div class="app">
+    <header class="appbar">
+      <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
+      <div class="appbar__title" id="appTitle">Guidelines</div>
+      <div class="version-chip">Demo v0.3</div>
+    </header>
+
+    <main class="home" id="home">
+      <div class="hero">
+        <h1>Medical Guidelines</h1>
+        <p>Evidence-based protocols at your fingertips</p>
+      </div>
+      
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search guidelines..." aria-label="Search guidelines"/>
+      </div>
+      
+      <div id="menuContent"></div>
+    </main>
+  </div>
+
+  <script type="module" src="./assets/app.js"></script>
+</body>
+</html>

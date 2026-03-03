@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f9fafb"/>
+  
+  <!-- Header bar -->
+  <rect width="600" height="60" fill="#8b2e4d"/>
+  <text x="20" y="38" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">Newborn Life Support</text>
+  
+  <!-- Content area -->
+  <g transform="translate(30, 90)">
+    <!-- Title -->
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1a1a1f">Initial Assessment</text>
+    
+    <!-- Bullet points -->
+    <g transform="translate(0, 25)">
+      <circle cx="5" cy="-5" r="4" fill="#8b2e4d"/>
+      <text x="20" y="0" font-family="Arial, sans-serif" font-size="15" fill="#374151">Assess color, tone, breathing, and heart rate</text>
+    </g>
+    
+    <g transform="translate(0, 55)">
+      <circle cx="5" cy="-5" r="4" fill="#8b2e4d"/>
+      <text x="20" y="0" font-family="Arial, sans-serif" font-size="15" fill="#374151">Dry infant and maintain temperature (36.5-37.5°C)</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle cx="5" cy="-5" r="4" fill="#8b2e4d"/>
+      <text x="20" y="0" font-family="Arial, sans-serif" font-size="15" fill="#374151">Open airway in neutral position if needed</text>
+    </g>
+    
+    <g transform="translate(0, 115)">
+      <circle cx="5" cy="-5" r="4" fill="#8b2e4d"/>
+      <text x="20" y="0" font-family="Arial, sans-serif" font-size="15" fill="#374151">Consider CPAP for preterm infants (5-6 cm H₂O)</text>
+    </g>
+    
+    <g transform="translate(0, 145)">
+      <circle cx="5" cy="-5" r="4" fill="#8b2e4d"/>
+      <text x="20" y="0" font-family="Arial, sans-serif" font-size="15" fill="#374151">If gasping/not breathing: give 5 inflation breaths (30 cm H₂O)</text>
+    </g>
+  </g>
+  
+  <!-- Footer note -->
+  <text x="30" y="370" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">Demo Reference • Not for clinical use</text>
+</svg>

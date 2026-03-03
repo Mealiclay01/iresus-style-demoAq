@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="100" fill="#2563eb"/>
+  <g transform="translate(256, 256)">
+    <!-- Medical cross -->
+    <rect x="-32" y="-128" width="64" height="256" fill="white" rx="12"/>
+    <rect x="-128" y="-32" width="256" height="64" fill="white" rx="12"/>
+    
+    <!-- Heart pulse outline -->
+    <path d="M -160 110 L -130 110 L -100 50 L -70 170 L -40 110 L 40 110 L 70 170 L 100 50 L 130 110 L 160 110" 
+          stroke="white" 
+          stroke-width="12" 
+          fill="none" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+  </g>
+</svg>

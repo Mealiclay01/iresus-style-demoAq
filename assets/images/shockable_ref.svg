@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f9fafb"/>
+  
+  <!-- Header bar -->
+  <rect width="600" height="60" fill="#dc2626"/>
+  <text x="20" y="38" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">Shockable Rhythm (VF/pVT)</text>
+  
+  <!-- Content area -->
+  <g transform="translate(30, 90)">
+    <!-- Title -->
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1a1a1f">Management Protocol</text>
+    
+    <!-- Bullet points -->
+    <g transform="translate(0, 25)">
+      <circle cx="5" cy="-5" r="4" fill="#dc2626"/>
+      <text x="20" y="0" font-family="Arial, sans-serif" font-size="15" fill="#374151">Deliver one shock and immediately resume CPR for 2 minutes</text>
+    </g>
+    
+    <g transform="translate(0, 55)">
+      <circle cx="5" cy="-5" r="4" fill="#dc2626"/>
+      <text x="20" y="0" font-family="Arial, sans-serif" font-size="15" fill="#374151">Give adrenaline after 3rd shock, then every 3-5 minutes</text>
+    </g>
+    
+    <g transform="translate(0, 85)">
+      <circle cx="5" cy="-5" r="4" fill="#dc2626"/>
+      <text x="20" y="0" font-family="Arial, sans-serif" font-size="15" fill="#374151">Consider amiodarone after 3 unsuccessful shocks</text>
+    </g>
+    
+    <g transform="translate(0, 115)">
+      <circle cx="5" cy="-5" r="4" fill="#dc2626"/>
+      <text x="20" y="0" font-family="Arial, sans-serif" font-size="15" fill="#374151">Check rhythm after every 2 minutes of CPR</text>
+    </g>
+    
+    <g transform="translate(0, 145)">
+      <circle cx="5" cy="-5" r="4" fill="#dc2626"/>
+      <text x="20" y="0" font-family="Arial, sans-serif" font-size="15" fill="#374151">Treat reversible causes throughout resuscitation</text>
+    </g>
+  </g>
+  
+  <!-- Footer note -->
+  <text x="30" y="370" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">Demo Reference • Not for clinical use</text>
+</svg>

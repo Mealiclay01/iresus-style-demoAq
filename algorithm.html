@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="theme-color" content="#2563eb"/>
+  <title>Algorithm</title>
+  <link rel="stylesheet" href="./assets/app.css"/>
+</head>
+<body>
+  <div class="app">
+    <header class="appbar appbar--algo">
+      <button class="iconbtn" id="btnBack" aria-label="Back">
+        <img src="./assets/icons/back.svg" alt="Back"/>
+      </button>
+      <div class="appbar__title" id="algoTitle">Algorithm</div>
+      <a class="iconbtn" href="./index.html" aria-label="Home">
+        <img src="./assets/icons/home.svg" alt="Home"/>
+      </a>
+    </header>
+
+    <div class="tabs" id="tabs"></div>
+
+    <main class="algo">
+      <div id="loadingSkeleton" class="loading-skeleton hidden">
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line"></div>
+      </div>
+      
+      <div id="tabOverview" class="tab-content active">
+        <section class="flow" id="flow"></section>
+      </div>
+      
+      <div id="tabDrugs" class="tab-content">
+        <div id="drugsContent"></div>
+      </div>
+      
+      <div id="tabNotes" class="tab-content">
+        <div id="notesContent" class="notes-content"></div>
+      </div>
+    </main>
+    
+    <div class="action-bar">
+      <button class="action-bar__btn" id="actionBack">← Back</button>
+      <button class="action-bar__btn" id="actionHome">🏠 Home</button>
+      <button class="action-bar__btn" id="actionSound">🔇 Sound</button>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="modal">
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__card">
+      <button class="modal__close" id="modalClose" aria-label="Close">✕</button>
+      <img id="modalImg" alt="Reference"/>
+      <div class="modal__cap" id="modalCap"></div>
+    </div>
+  </div>
+
+  <script type="module" src="./assets/algo.js"></script>
+</body>
+</html>
